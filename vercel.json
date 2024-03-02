@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "npm run build", "use": "@vercel/node" },
+    { "src": "prisma/schema.prisma", "use": "@prisma/cli" }
+  ],
+  "env": {
+    "DATABASE_URL" : "mongodb+srv://enghourh5:Tahour2023@cluster0.grrglvn.mongodb.net/todo-task?retryWrites=true&w=majority"
+  }
+}
